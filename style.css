@@ -1,4 +1,46 @@
-html {
-  height: 100%;
-  width: 100%;
+@font-face {
+	font-family: 'Exo';
+	src: url(Exo2-Regular.ttf) format('ttf');
+}
+
+.carousel-item {
+	width: 100em;
+	height: 100 em;
+
+}
+
+
+.cover-text {
+	color: white;
+	text-shadow: 0px 0px 5px #5c5c5c;
+}
+
+.resized {
+	max-width: 10px;
+	max-height: auto;
+}
+
+p {
+	font-family: Exo;
+}
+
+.color_nav {
+	color: #ECF4D6
+}
+
+.color_nav_button {
+	background-color: #ECF4D6
+}
+
+.color_nav:hover {
+	color: #9AD0C2
+}
+
+.nav_margin {
+	margin-right: 10 px;
+}
+
+.container {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
