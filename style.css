@@ -1,27 +1,10 @@
-@font-face {
-	font-family: 'Exo';
-	src: url(Exo2-Regular.ttf) format('ttf');
+* {
+	font-family: "Exo 2", monospace;
 }
-
-.carousel-item {
-	width: 100em;
-	height: 100 em;
-
-}
-
 
 .cover-text {
 	color: white;
-	text-shadow: 0px 0px 5px #5c5c5c;
-}
-
-.resized {
-	max-width: 10px;
-	max-height: auto;
-}
-
-p {
-	font-family: Exo;
+	text-shadow: 0 0 5px #5c5c5c;
 }
 
 .color_nav {
@@ -35,9 +18,12 @@ p {
 .color_nav:hover {
 	color: #9AD0C2
 }
+.color_nav:focus {
+	color: #9AD0C2
+}
 
 .nav_margin {
-	margin-right: 10 px;
+	margin-right: 10px;
 }
 
 .container {
