@@ -18,6 +18,7 @@
 .color_nav:hover {
 	color: #9AD0C2
 }
+
 .color_nav:focus {
 	color: #9AD0C2
 }
@@ -26,7 +27,16 @@
 	margin-right: 10px;
 }
 
-.container {
-	padding-top: 50px;
-	padding-bottom: 50px;
+body {
+	min-height: 100vh;
+	display: grid;
+	align-content: center;
+	gap: 2rem;
+	font-family: "Poppins", sans-serif;
+	color: var(--color);
+	background: var(--bgColor);
+}
+
+footer {
+	background-color: #ECF4D6;
 }

@@ -1,0 +1,35 @@
+input[type="submit"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	background-color: #007BFF;
+	color: white;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	background-color: #9AD0C2;
+	color: #5c5c5c
+}
+
+form {
+	padding: 40px;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%);
+	border-radius: 5px;
+	color: #265073
+}
+
+body {
+	background-image: url("immagine_sfondo_form.webp");
+}
+
+h1 {
+	color: #265073
+}
+
+#spaziatura{
+  padding: 20px;
+}
