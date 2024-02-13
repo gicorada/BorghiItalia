@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alberghi</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+		integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./tour.css">
+</head>
+
+<body>
+
+	<div id="header"></div>
+
+	<div class="mt-4 p-5 bg-primary text-white rounded">
+		<h1 style=" text-align: center;" data-i18n-key="titolo-alberghi">ALBERGHI</h1>
+		<h4 style="padding-top: 2%; padding-left: 5%; text-align: center; padding-right: 5%;" data-i18n-key="sottotitolo-alberghi">
+			QUI PUOI CONOSCERE I MIGLIORI LUOGHI DI PERNOTTAMENTO DISPONIBILI NELLA MADDALENA
+		</h4>
+	</div>
+
+	<div class="cont" style="display:flex;">
+		<div class="scritte" style="padding:5%;">
+			<div class="hotel megiv" style="display:block; padding-bottom:5%">
+				<div class="megaDiv">
+					<h2>HOTEL</h2>
+					<div class="w3-row" style="text-align:center; display:flex;">
+						<div class="w3-col m4 images"
+							style="background-image:url('Immagini_residenze/Immagine_hotel_1.webp');background-size:cover;height:150px; width:33%;background-repeat: no-repeat;background-size: 100% 100%;">
+						</div>
+						<div class="w3-col m4 images"
+							style="background-image:url('Immagini_residenze/Immagine_hotel_2.webp');background-size:cover;height:150px; width:33%;background-repeat: no-repeat;background-size: 100% 100%;">
+						</div>
+						<div class="w3-col m4 images"
+							style="background-image: url('Immagini_residenze/Immagine_hotel_3.webp'); background-image:cover;height:150px; width:33%;background-repeat: no-repeat;background-size: 100% 100%;">
+						</div>
+					</div>
+
+					<p class="nascostest"></p>
+					<p class="nascostest"></p>
+					<p class="nascostest"></p>
+				</div>
+			</div>
+
+			<div class="b-and-b" style="display:block; padding-bottom:5%">
+				<div class=" megaDiv">
+					<h2>B&B</h2>
+					<div class="w3-row" style="text-align:center; display:flex;">
+						<div class="w3-col m4 images"
+							style="background-image:url('Immagini_residenze/Immagine_b&b_1.webp');background-size:cover;height:150px; width:33%;background-repeat: no-repeat;background-size: 100% 100%;">
+						</div>
+						<div class="w3-col m4 immagine_pern images"
+							style="background-image:url('Immagini_residenze/Immagine_b&b_2.webp');background-size:cover;height:150px; width:33%;background-repeat: no-repeat;background-size: 100% 100%;">
+						</div>
+						<div class="w3-col m4 images"
+							style="background-image: url('Immagini_residenze/Immagine_b&b_3.webp'); background-image:cover;height:150px; width:33%;background-repeat: no-repeat;background-size: 100% 100%;">
+						</div>
+					</div>
+
+					<p class="nascostest"></p>
+					<p class="nascostest"></p>
+					<p class="nascostest"></p>
+				</div>
+			</div>
+
+			<div class="casa" style="display:block">
+				<div class="megaDiv">
+					<h2>CASE VACANZA</h2>
+					<div class="w3-row" style="text-align:center; display:flex;">
+						<div class="w3-col m4 images"
+							style="background-image:url('Immagini_residenze/Immagine_casa_1.webp');background-size:cover;height:150px; width:33%;background-repeat: no-repeat;background-size: 100% 100%;">
+						</div>
+						<div class="w3-col m4 images"
+							style="background-image:url('Immagini_residenze/Immagine_casa_2.webp');background-size:cover;height:150px; width:33%;background-repeat: no-repeat;background-size: 100% 100%;">
+						</div>
+						<div class="w3-col m4 images"
+							style="background-image: url('Immagini_residenze/Immagine_casa_3.webp'); background-image:cover;height:150px;width:33%;background-repeat: no-repeat;background-size: 100% 100%;">
+						</div>
+					</div>
+
+					<p class="nascostest"></p>
+					<p class="nascostest"></p>
+					<p class="nascostest"></p>
+				</div>
+			</div>
+		</div><!--fine scritte-->
+		<div class="cont-mappa">
+			<iframe width="100%" ; height="350" ;
+				src="https://www.openstreetmap.org/export/embed.html?bbox=9.393020868301393%2C41.208751281900454%2C9.407504796981813%2C41.21448176519206&amp;layer=mapnik"
+				style="border: 1px solid black;"></iframe>
+			<br><br><br>
+			<p data-i18n-key="testo-alberghi">Se siamo riusciti a farvi interessare a questo borgo, consigliamo di prenotare il vostro viaggio al link qui
+				sotto, o vedere i luoghi più belli della Maddalena</p>
+			<button type="button" class="btn btn-primary" target="_blank"> <a href="form.html" data-i18n-key="nav-prenotazione">Prenota</a></button>
+			<button type="button" class="btn btn-primary" target="_blank" style="float:right;"> <a href="storia.html" data-i18n-key="testo-cosavisitare">Cosa visitare?</a></button>
+		</div>
+	</div><!--fine bigcontainer-->
+
+	<div id="footer"></div>
+
+
+	<script src="script/script.js"></script>
+	<script>
+		const scritte = [
+			/*hotel*/
+			"Primo hotel dell'isola della Maddalena, costruito nel 1955, Il Gabbiano vanta una splendida vista sul mare cristallino e sulle isole di Caprera, Santo Stefano e Spargi.",
+			"L'Excelsior sorge nel centro della Maddalena, di fronte a un parcheggio pubblico gratuito e a 2 minuti a piedi dai traghetti da e per Palau.",
+			"Sito sulla costa meridionale dell'Isola de La Maddalena, l'Hotel Miralonga si erge a 2 km dal centro di La Maddalena e offre una piscina all'aperto e la connessione Wi-Fi gratuita nelle aree comuni.",
+			/*b&b*/
+			"Situata a 2,1 km dalla Spiaggia di Punta Tegge, questo struttura per non fumatori garantisce a tutti i clienti comodità quali aria condizionata, TV satellitare a schermo piatto, frigorifero, macchina da caffè, bidet, set di cortesia e armadio.",
+			"La Villa Manini suites offre una sistemazione con giardino e servizi gratuiti come il WiFi in tutte le aree e un parcheggio privato. Tutte le unità sono climatizzate e presentano un armadio, una macchina da caffè, un frigorifero, un piano cottura, una cassaforte e un bagno privato con bidet e un bollitore.",
+			"Il b&b U Punenti offre connessione WiFi gratuita e giardino con terrazza con vista sul mare. Tutte le unità abitative presentano interni climatizzati, una TV a schermo piatto, un frigorifero e 1 bagno privato con bidet. A disposizione un forno a microonde, una lavastoviglie, un tostapane e un bollitore.",
+			/*case vacanza*/
+			"Ubicata a circa 2,3 km dalla Spiaggia del Villaggio Piras, la Casa Maria offre una vista sul giardino, una terrazza e un patio.  Dotata di aria condizionata, 2 camere da letto, 1 soggiorno e 1 bagno con doccia e bidet, questa casa vacanze include una cucina con frigorifero e macchina da caffè.",
+			"La Residenza Marginetto vanta un accesso diretto alla spiaggia di Marginetto, distante 50 metri, e servizi gratuiti quali il parcheggio privato e la connessione WiFi in tutte le aree.  Tutte le sistemazioni sono climatizzate e includono un grande patio arredato",
+			"Situata vicino alla spiaggia Carla Carlotto, l'appartamento il Caracolo è stato recentemente rinnovato ed è dotato, tra le altre cose, di una spiaggia privata. Questa abitazione garantisce parcheggio privato gratuitamente e assistenza ai clienti 24 ore su 24."]
+
+		const images = document.getElementsByClassName("images")
+		const paragraph = document.getElementsByClassName("nascostest")
+
+		for (let i = 0; i < scritte.length; i++) {
+			function mostra() {
+				paragraph[i].innerHTML = scritte[i]
+			}
+			images[i].addEventListener("mouseover", mostra)
+
+			function svuota() {
+				paragraph[i].innerHTML = ""
+			}
+			images[i].addEventListener("mouseout", svuota)
+		}
+	</script>
+	<script src="script/translation/index.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+</body>

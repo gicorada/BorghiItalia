@@ -28,64 +28,67 @@ ECF4D6
 
 
 
-	<div class="d-flex h-100 text-center text-white"
-		style="background-image: url(https://www.stylepiccoli.it/wp-content/uploads/2022/07/Cala-Goloritze%CC%80-Baunei-Alessandro-Addis.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
-
-		<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-			<main class="px-3">
-				<br><br><br><br><br><br><br><br><br><br><br><br>
-				<h1 class="cover-text">La Maddalena</h1>
-				<h2 class="cover-text lead">Le spiagge più belle dell'isola</h2>
-			</main>
+	<div class="d-flex text-center text-white carosello" id="intro-homepage">
+		<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column justify-content-end">
+			<div class="px-3">
+				<h1 class="text-light text-shadow" data-i18n-key="titolo">La Maddalena</h1>
+				<h2 class="text-light lead text-shadow" data-i18n-key="sottotitolo">Le spiagge più belle dell'isola</h2>
+			</div>
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container mt-5">
 		<div class="row align-items-start">
 			<div class="col-md-6">
-				<div id="carouselExampleFade" class="carousel slide">
-					<div class=" carousel-inner">
+				<div id="carouselExample" class="carousel slide">
+					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="Immagini_Carosello/1.jpg" class="d-block w-100" alt="...">
+							<img src="Immagini_Carosello/1.webp" class="d-block w-100" alt="">
 						</div>
 						<div class="carousel-item">
-							<img src="Immagini_Carosello/2.jpg" class="d-block w-100" alt="...">
+							<img src="Immagini_Carosello/2.webp" class="d-block w-100" alt="">
 						</div>
 						<div class="carousel-item">
-							<img src="Immagini_Carosello/3.jpg" class="d-block w-100" alt="...">
+							<img src="Immagini_Carosello/3.webp" class="d-block w-100" alt="">
 						</div>
 					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
 						data-bs-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						<span class="visually-hidden">Previous</span>
 					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
 						data-bs-slide="next">
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 						<span class="visually-hidden">Next</span>
 					</button>
 				</div>
 			</div>
-			<div class="col-md-6 border-start">
-				<div class="descrizione_index">
-					<p>La Maddalena è uno dei comuni italiani più fiorenti del paese.
-						Vanta spiagge bellissime, un mare cristallino e un accoglienza calorosa, tipici della regione
-						Sardegna, senza rinunciare a molte attività diverse proposte dai villaggi turistici. Su questo
-						sito troverai tutte le informazioni necessarie per organizzare il viaggio dei tuoi sogni e
-						appassionarti alla cultura della più bella isola d'Italia</p>
-				</div>
+
+
+			<div class="col-md-6 border-start pt-2">
+				<p class="align-middle" data-i18n-key="testo-home">La Maddalena è uno dei comuni italiani più fiorenti
+					del paese.
+					Vanta spiagge bellissime, un mare cristallino e un accoglienza calorosa, caratteristiche tipiche
+					della regione Sardegna, senza rinunciare a molte attività diverse proposte dai villaggi turistici.
+					Su questo sito troverai tutte le informazioni necessarie per organizzare il viaggio dei tuoi sogni e
+					appassionarti alla cultura della isola più bella d'Italia
+				</p>
 			</div>
 		</div>
 	</div>
+	</div>
+
 
 
 
 
 	<div id="footer"></div>
 
+	<script src="./carousel.js"></script>
+	<script src="./script/script.js"></script>
+	<script src="./script/translation/index.js"></script>
 
-	<script src="./script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>

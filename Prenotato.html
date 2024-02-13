@@ -20,27 +20,43 @@
 
 
 	<div class="container mt-5">
-		<h1 class="title" id="titolo-prenotazione">Grazie per aver prenotato con noi!</h1>
-		<h3 class="subtitle" id="sottotitolo-prenotazione">Per vedere una copia dei tuoi dati inviati devi attivare
-			Javascript</h3>
+		<h1 class="title mt-4 p-4 bg-primary text-white rounded text-center">
+			<span id="titolo-prenotazione">Sconosciuto</span><span data-i18n-key="titolo-conferma">, grazie per aver
+				prenotato con noi!</span>
+		</h1>
+		<h3 class="subtitle text-center pt-2" id="sottotitolo-prenotazione" data-i18n-key="sottotitolo-conferma">
+			Per vedere una copia dei tuoi dati inviati devi attivare Javascript
+		</h3>
 
-		<p id="codice_fiscale"></p>
-		<p id="email"></p>
-		<p id="aer_part"></p>
-		<p id="luogo_pern"></p>
-		<p id="data_partenza"></p>
-		<p id="data_ritorno"></p>
-		<p id="n_bagagli"></p>
-
-
+		<p class="text-center pt-2">
+			<span data-i18n-key="label-codicefiscale">Codice Fiscale:</span> <span id="codice_fiscale"></span>
+		</p>
+		<p class="text-center">
+			<span data-i18n-key="label-email">Email:</span> <span id="email"></span>
+		</p>
+		<p class="text-center">
+			<span data-i18n-key="label-aerpart">Aeroporto di partenza:</span> <span id="aer_part"></span>
+		</p>
+		<p class="text-center">
+			<span data-i18n-key="label-luogopern">Luogo di pernottamento:</span> <span id="luogo_pern"></span>
+		</p>
+		<p class="text-center">
+			<span data-i18n-key="label-datapartenza">Data e orario di partenza:</span> <span id="data_partenza"></span>
+		</p>
+		<p class="text-center">
+			<span data-i18n-key="label-dataritorno">Data e orario di ritorno:</span> <span id="data_ritorno"></span>
+		</p>
+		<p class="text-center pb-2">
+			<span data-i18n-key="label-nbagagli">Numero di bagagli trasportati:</span> <span id="n_bagagli"></span>
+		</p>
 	</div>
 
 
-	<div id="footer">
-	</div>
+	<div id="footer"></div>
 
-	<script src="./script.js"></script>
-	<script src="./formdata.js"></script>
+	<script src="./script/script.js"></script>
+	<script src="./script/formdata.js"></script>
+	<script src="./script/translation/index.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Prenota il tuo volo!</title>
+	<title>Prenota il tuo viaggio!</title>
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
 		integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
@@ -19,130 +19,142 @@
 <body>
 	<div id="header"></div>
 
-	<div id="spaziatura">
-		<form action="Prenotato.html" method="get">
-			<h1 id="title">Prenota il tuo volo!</h1>
+	<form action="Prenotato.html" method="get" class="m-4 p-4 rounded-3">
+		<h1 class="title" data-i18n-key="titolo-prenota">Prenota il tuo viaggio!</h1>
 
-			<div class="mb-3">
-				<label for="nome" class="form-label">Nome:</label>
-				<input type="text" id="nome" name="nome" class="form-control" placeholder="Mario" required>
-			</div>
-			<div class="mb-3">
-				<label for="nome" class="form-label">Cognome:</label>
-				<input type="text" name="cognome" class="form-control" placeholder="Rossi" required>
-			</div>
-
-
-			<div class="mb-3">
-				<label for="codice_fiscale" class="form-label">Codice Fiscale:</label>
-				<input type="text" name="codice_fiscale" class="form-control" minlength="16" maxlength="16" required>
-			</div>
-
-			<div class="mb-3">
-				<label for="email" class="form-label">Email: </label>
-				<input type="email" name="email" placeholder="nome1234@gmail.com" class="form-control" required>
-			</div>
+		<div class="mb-3">
+			<label for="nome" class="form-label" data-i18n-key="label-nome">Nome:</label>
+			<input type="text" id="nome" name="nome" class="form-control" placeholder="Mario" required>
+		</div>
+		<div class="mb-3">
+			<label for="nome" class="form-label" data-i18n-key="label-cognome">Cognome:</label>
+			<input type="text" name="cognome" class="form-control" placeholder="Rossi" required>
+		</div>
 
 
-			<div class="mb-3">
-				<label for="aer_part" class="form-label">Aeroporto di partenza:</label>
-				<select name="aer_part" id="aer_part" class="form-control form-select" required>
-					<optgroup label="Aeroporti italiani">
-						<option value="FCO">Aeroporto di Roma Fiumicino - Leonardo da Vinci</option>
-						<option value="MXP">Aeroporto di Milano Malpensa</option>
-						<option value="LIN">Aeroporto di Milano Linate</option>
-						<option value="VCE">Aeroporto di Venezia Marco Polo</option>
-						<option value="CTA">Aeroporto di Catania Fontanarossa</option>
-						<option value="NAP">Aeroporto di Napoli Capodichino</option>
-						<option value="BLQ">Aeroporto di Bologna Guglielmo Marconi</option>
-						<option value="PMO">Aeroporto di Palermo Falcone e Borsellino</option>
-						<option value="CAG">Aeroporto di Cagliari Elmas</option>
-						<option value="VNO">Aeroporto di Verona Villafranca</option>
-						<option value="GOA">Aeroporto di Genova Cristoforo Colombo</option>
-						<option value="FLR">Aeroporto di Firenze Amerigo Vespucci</option>
-						<option value="SUF">Aeroporto di Lamezia Terme</option>
-						<option value="TRS">Aeroporto di Trieste Friuli Venezia Giulia</option>
-						<option value="PSA">Aeroporto di Pisa Galileo Galilei</option>
-						<option value="BDS">Aeroporto di Brindisi Salento</option>
-						<option value="REG">Aeroporto di Reggio Calabria Tito Minniti</option>
-					</optgroup>
-					<optgroup label="Aeroporti esteri">
-						<option value="BRI">Aeroporto di Bari Karol Wojtyła</option>
-						<option value="PMI">Aeroporto di Palma di Maiorca (Spagna)</option>
-						<option value="CMF">Aeroporto di Chambery (Francia)</option>
-						<option value="ZRH">Aeroporto di Zurigo (Svizzera)</option>
-						<option value="AMS">Aeroporto di Amsterdam Schiphol (Paesi Bassi)</option>
-						<option value="CDG">Aeroporto di Parigi Charles de Gaulle (Francia)</option>
-						<option value="LHR">Aeroporto di Londra Heathrow (Regno Unito)</option>
-						<option value="FRA">Aeroporto di Francoforte (Germania)</option>
-						<option value="MUC">Aeroporto di Monaco di Baviera (Germania)</option>
-						<option value="JFK">Aeroporto John F. Kennedy di New York (USA)</option>
-						<option value="LAX">Aeroporto di Los Angeles (USA)</option>
-						<option value="DXB">Aeroporto di Dubai International (Emirati Arabi Uniti)</option>
-					</optgroup>
-				</select>
-			</div>
+		<div class="mb-3">
+			<label for="codice_fiscale" class="form-label" data-i18n-key="label-codicefiscale">Codice
+				Fiscale:</label>
+			<input type="text" name="codice_fiscale" class="form-control" minlength="16" maxlength="16" required>
+		</div>
 
-			<p>Arrivo: Aeroporto di Olbia Costa Smeralda</p>
-
-			<!--Selezione albergo-->
-
-			<div class="mb-3">
-				<label for="luogo_pern" class="form-label">Luogo di pernottamento: </label>
-				<select name="luogo_pern" id="luogo_pern" class="form-control form-select" required>
-					<optgroup label="Hotel">
-						<option value="FCO">Aeroporto di Roma Fiumicino - Leonardo da Vinci</option>
-						<option value="MXP">Aeroporto di Milano Malpensa</option>
-						<option value="LIN">Aeroporto di Milano Linate</option>
-					</optgroup>
-					<optgroup label="Bed & Breakfast">
-						<option value="BRI">Aeroporto di Bari Karol Wojtyła</option>
-						<option value="PMI">Aeroporto di Palma di Maiorca (Spagna)</option>
-						<option value="CMF">Aeroporto di Chambery (Francia)</option>
-					</optgroup>
-					<optgroup label="Ostello">
-						<option value="FCO">Aeroporto di Roma Fiumicino - Leonardo da Vinci</option>
-						<option value="MXP">Aeroporto di Milano Malpensa</option>
-						<option value="LIN">Aeroporto di Milano Linate</option>
-					</optgroup>
-				</select>
-			</div>
-
-			<div class="mb-3">
-				<label for="data_partenza" class="form-label">Data e orario di partenza:</label>
-				<input type="datetime-local" name="data_partenza" class="form-control" required>
-				<label for="data_ritorno" class="form-label"></label>Data e orario di ritorno:
-				<input type="datetime-local" name="data_ritorno" class="form-control" required>
-			</div>
-
-			<div class="mb-3">
-				<label for="n_bagagli" class="form-label">Numero di bagagli trasportati:</label>
-				<input type="number" name="n_bagagli" min="0" max="3" class="form-control" required>
-			</div>
+		<div class="mb-3">
+			<label for="email" class="form-label" data-i18n-key="label-email">Email: </label>
+			<input type="email" name="email" placeholder="nome1234@gmail.com" class="form-control" required>
+		</div>
 
 
-			<div class="form-check mb-3">
-				<label for="cond_contr" class="form-check-label">Ho letto e accetto le condizioni</label>
-				<input type="checkbox" id="cond_contr" name="cond_contr" value="Accetto" class="form-check-input"
-					required>
-			</div>
+		<div class="mb-3">
+			<label for="aer_part" class="form-label" data-i18n-key="label-aerpart">Aeroporto di partenza:</label>
+			<select name="aer_part" id="aer_part" class="form-control form-select" required>
+				<optgroup label="Aeroporti italiani" id="label-aeroportiitaliani">
+					<option value="FCO" data-i18n-key="FCO">Aeroporto di Roma Fiumicino - Leonardo da Vinci</option>
+					<option value="MXP" data-i18n-key="MXP">Aeroporto di Milano Malpensa</option>
+					<option value="LIN" data-i18n-key="LIN">Aeroporto di Milano Linate</option>
+					<option value="VCE" data-i18n-key="VCE">Aeroporto di Venezia Marco Polo</option>
+					<option value="CTA" data-i18n-key="CTA">Aeroporto di Catania Fontanarossa</option>
+					<option value="NAP" data-i18n-key="NAP">Aeroporto di Napoli Capodichino</option>
+					<option value="BLQ" data-i18n-key="BLQ">Aeroporto di Bologna Guglielmo Marconi</option>
+					<option value="PMO" data-i18n-key="PMO">Aeroporto di Palermo Falcone e Borsellino</option>
+					<option value="CAG" data-i18n-key="CAG">Aeroporto di Cagliari Elmas</option>
+					<option value="VNO" data-i18n-key="VNO">Aeroporto di Verona Villafranca</option>
+					<option value="GOA" data-i18n-key="VNO">Aeroporto di Genova Cristoforo Colombo</option>
+					<option value="FLR" data-i18n-key="FLR">Aeroporto di Firenze Amerigo Vespucci</option>
+					<option value="SUF" data-i18n-key="SUF">Aeroporto di Lamezia Terme</option>
+					<option value="TRS" data-i18n-key="TRS">Aeroporto di Trieste Friuli Venezia Giulia</option>
+					<option value="PSA" data-i18n-key="PSA">Aeroporto di Pisa Galileo Galilei</option>
+					<option value="BDS" data-i18n-key="BDS">Aeroporto di Brindisi Salento</option>
+					<option value="REG" data-i18n-key="REG">Aeroporto di Reggio Calabria Tito Minniti</option>
+				</optgroup>
+				<optgroup label="Aeroporti esteri" id="label-aeroportiesteri">
+					<option value="BRI" data-i18n-key="BRI">Aeroporto di Bari Karol Wojtyła</option>
+					<option value="PMI" data-i18n-key="PMI">Aeroporto di Palma di Maiorca (Spagna)</option>
+					<option value="CMF" data-i18n-key="CMF">Aeroporto di Chambery (Francia)</option>
+					<option value="ZRH" data-i18n-key="ZRH">Aeroporto di Zurigo (Svizzera)</option>
+					<option value="AMS" data-i18n-key="AMS">Aeroporto di Amsterdam Schiphol (Paesi Bassi)</option>
+					<option value="CDG" data-i18n-key="CDG">Aeroporto di Parigi Charles de Gaulle (Francia)
+					</option>
+					<option value="LHR" data-i18n-key="LHR">Aeroporto di Londra Heathrow (Regno Unito)</option>
+					<option value="FRA" data-i18n-key="FRA">Aeroporto di Francoforte (Germania)</option>
+					<option value="MUC" data-i18n-key="MUC">Aeroporto di Monaco di Baviera (Germania)</option>
+					<option value="JFK" data-i18n-key="JFK">Aeroporto John F. Kennedy di New York (USA)</option>
+					<option value="LAX" data-i18n-key="LAX">Aeroporto di Los Angeles (USA)</option>
+					<option value="DXB" data-i18n-key="DXB">Aeroporto di Dubai International (Emirati Arabi Uniti)
+					</option>
+				</optgroup>
+			</select>
+		</div>
 
-			<div class="mb-3">
-				<label for="carta_di_identita" class="form-label"> Inserire file contenente l'immagine della carta di
-					identita</label>
-				<input type="file" name="carta_di_identita" class="form-control" required>
-			</div>
+		<p class="form-label" data-i18n-key="label-aerdest">Arrivo: Aeroporto di Olbia Costa Smeralda</p>
 
-			<input type="submit" value="Submit" class="custom-primary-button">
-		</form>
-	</div>
+		<div class="mb-3">
+			<label for="luogo_pern" class="form-label" data-i18n-key="label-luogopern">Luogo di pernottamento:
+			</label>
+			<select name="luogo_pern" id="luogo_pern" class="form-control form-select" required>
+				<optgroup label="Hotel" id="label-hotel">
+					<option value="ilgabbiano" data-i18n-key="label-ilgabbiano">Hotel Il Gabbiano</option>
+					<option value="excelsior" data-i18n-key="label-excelsior">Hotel Excelsior</option>
+					<option value="miralonga" data-i18n-key="label-miralonga">Hotel Miralonga</option>
+				</optgroup>
+				<optgroup label="Bed & Breakfast" id="label-bnb">
+					<option value="dimoraelle" data-i18n-key="label-dimoraelle">Dimora Elle</option>
+					<option value="villamanini" data-i18n-key="label-villamanini">Villa Manini</option>
+					<option value="upunenti" data-i18n-key="label-upunenti">U Punenti</option>
+				</optgroup>
+				<optgroup label="Case Vacanza" id="label-casevacanza">
+					<option value="casamaria" data-i18n-key="label-casamaria">Casa Maria</option>
+					<option value="residenzamarginetto" data-i18n-key="label-residenzamarginetto">Residenza Marginetto
+					</option>
+					<option value="ilcaracolo" data-i18n-key="label-ilcaracolo">Il Caracolo</option>
+				</optgroup>
+			</select>
+		</div>
 
+		<div class="mb-3">
+			<label for="data_partenza" class="form-label" data-i18n-key="label-datapartenza">
+				Data e orario di partenza:
+			</label>
+			<input type="datetime-local" name="data_partenza" class="form-control" required>
+			<label for="data_ritorno" class="form-label" data-i18n-key="label-dataritorno">
+				Data e orario di ritorno:
+			</label>
+			<input type="datetime-local" name="data_ritorno" class="form-control" required>
+		</div>
+
+		<div class="mb-3">
+			<label for="n_bagagli" class="form-label" data-i18n-key="label-nbagagli">
+				Numero di bagagli trasportati:
+			</label>
+			<input type="number" name="n_bagagli" min="0" max="3" class="form-control" required>
+		</div>
+
+
+		<div class="form-check mb-3">
+			<label for="cond_contr" class="form-check-label" data-i18n-key="label-condizioni">
+				Ho letto e accetto le condizioni
+			</label>
+			<input type="checkbox" id="cond_contr" name="cond_contr" value="Accetto" class="form-check-input" required>
+		</div>
+
+		<div class="mb-3">
+			<label for="carta_di_identita" class="form-label" data-i18n-key="label-cartaidentita">
+				Inserire file contenente l'immagine della carta di identita
+			</label>
+			<input type="file" name="carta_di_identita" class="form-control" required>
+		</div>
+
+		<div class="d-grid">
+			<button type="submit" class="py-2 rounded-3 text-light btn btn-primary"
+				data-i18n-key="label-invia">Invia</button>
+		</div>
+	</form>
 
 
 
 	<div id="footer"></div>
 
-	<script src="./script.js"></script>
+	<script src="./script/script.js"></script>
+	<script src="./script/translation/index.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
