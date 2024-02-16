@@ -7,7 +7,7 @@ const translations = {
 	"it": {
 		/* Inizio header footer */
 		"nav-alberghi": "Alberghi",
-		"nav-storia": "Storia",
+		"nav-storia": "Galleria",
 		"nav-prenotazione": "Prenota il tuo viaggio",
 		"footer-curadi": "A cura di",
 		"footer-contattaci": "Contattaci",
