@@ -113,7 +113,7 @@ const translations = {
 	"en": {
 		/* Inizio header footer */
 		"nav-alberghi": "Hotels",
-		"nav-storia": "History",
+		"nav-storia": "Photo Gallery",
 		"nav-prenotazione": "Book a trip",
 		"footer-curadi": "Edited by",
 		"footer-contattaci": "Contact us",
